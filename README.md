@@ -1,6 +1,8 @@
 aws_cloudwatch_alarm_severity
 ==
 
+[![Build Status](https://travis-ci.org/moznion/aws_cloudwatch_alarm_severity.svg?branch=master)](https://travis-ci.org/moznion/aws_cloudwatch_alarm_severity) [![npm version](https://badge.fury.io/js/aws_cloudwatch_alarm_severity.svg)](https://badge.fury.io/js/aws_cloudwatch_alarm_severity) [![devDependencies Status](https://david-dm.org/moznion/aws_cloudwatch_alarm_severity/dev-status.svg)](https://david-dm.org/moznion/aws_cloudwatch_alarm_severity?type=dev)
+
 A classifier for AWS CloudWatch alarm events by severity level.
 
 Synopsis
