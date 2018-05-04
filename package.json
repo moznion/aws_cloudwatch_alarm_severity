@@ -1,0 +1,46 @@
+{
+  "name": "aws_cloudwatch_alarm_severity",
+  "version": "0.0.1",
+  "description": "A classifier for AWS CloudWatch alarm events by severity level",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel --out-dir lib/ --source-maps true --ignore **/*.test.js src/",
+    "clean": "rm -rf lib",
+    "test": "ava",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/",
+    "check-fmt": "find src -type f -name \"*.js\" | xargs prettier --list-different",
+    "fmt": "find src -type f -name \"*.js\" | xargs ./node_modules/.bin/prettier --write",
+    "fix": "yarn fmt && yarn lint-fix",
+    "prove": "yarn test && yarn lint && yarn check-fmt"
+  },
+  "keywords": [
+    "AWS",
+    "CloudWatch"
+  ],
+  "repository": "https://github.com/moznion/aws_cloudwatch_alarm_severity",
+  "author": "moznion",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "prettier": "^1.12.1"
+  },
+  "ava": {
+    "files": "src/**/*.test.js",
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "compileEnhancements": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": {}
+  }
+}

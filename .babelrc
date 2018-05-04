@@ -1,0 +1,11 @@
+{
+  "presets": ["env"],
+  "plugins": [
+    "transform-class-properties"
+  ],
+  "ignore":[
+    "lib",
+    "node_modules"
+  ]
+}
+
